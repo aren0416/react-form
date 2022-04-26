@@ -6,6 +6,7 @@ import { Button } from "../component/auth/Button";
 import { Form } from "../component/auth/Form";
 import { Input } from "../component/auth/Input";
 import { Title } from "../component/auth/Title";
+import { PageTitle } from "../component/PageTitle";
 import { routes } from "../routes";
 
 export const SignUp = () => {
@@ -33,6 +34,7 @@ export const SignUp = () => {
 
   return (
     <AuthLayout>
+      <PageTitle title="회원가입" />
       <Title>회원가입</Title>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Input
